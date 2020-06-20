@@ -5,7 +5,7 @@ import { FlatList } from 'react-native-gesture-handler';
 const ListComponentScreen = () => {
     
     const family = [
-        { firstName: 'Kuldeep', lastName: 'Joshi' },
+        { firstName: 'Kuldeep', lastName: 'Joshi'},
         { firstName: 'Neha', lastName: 'Joshi'  },
         { firstName: 'Usha', lastName: 'Joshi' },
         { firstName: 'Vijay', lastName: 'Joshi'  },

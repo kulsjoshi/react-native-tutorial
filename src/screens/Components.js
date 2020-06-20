@@ -8,7 +8,7 @@ const ComponentsScreen = function(){
 
     return (
     <View>
-        <Text style={styles.textStyleLarge}>Getting started with ReactNative</Text>
+        <Text style={styles.textStyleLarge}>This is a component screen</Text>
         <Text style={styles.textStyleSmall}>My name is {userName}</Text>   
     </View>
     );
@@ -17,7 +17,7 @@ const ComponentsScreen = function(){
 const styles = StyleSheet.create(
     {
         textStyleLarge: {
-            fontSize: 45
+            fontSize: 30
         },
 
         textStyleSmall: {
