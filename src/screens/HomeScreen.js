@@ -2,25 +2,44 @@ import React from "react";
 import { Text, StyleSheet, View, Button } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-const HomeScreen = () => {
+//Types of arugment in below method
+// 1 - Use "props" -> Example : props.navigation.navigate()
+// 2 - Use "({navigation})" -> Example : navigation.navigate()
+// navigation is part of props. 
+const HomeScreen = ({navigation}) => {
+
+    //Below line will print a list of props for particular component. Uncomment below line 
+    //console.log(props.navigation);
+
   return (
     <View>
 
-      <Text style={styles.headerStyle}>Welcome to my first ReactNative code</Text>
+      <Text style={styles.headerStyle}>Welcome to Home Screen</Text>
       <Text style={styles.subHeaderStyle}>Tap on following button to proceed further</Text>
 
       <Button
-
         //Below prop is used for button click listener
-        onPress={()=> console.log('Button pressed')}
+        onPress={()=> navigation.navigate('Components')}
 
         //Below prop is used to set a name of the button
         title="Go to Components Screen"
       />
 
-      <TouchableOpacity onPress={() => console.log('list screen option pressed')}>
-        <Text>Go to List Screen</Text>
-      </TouchableOpacity>
+      <Button
+         //Below prop is used for button click listener
+         onPress={()=> navigation.navigate('List')}
+
+        //Below prop is used to set a name of the button
+        title="Go to List Screen"
+      />
+
+      <Button
+         //Below prop is used for button click listener
+         onPress={()=> navigation.navigate('Image')}
+
+        //Below prop is used to set a name of the button
+        title="Go to Image Screen"
+      />
 
     </View>
   );

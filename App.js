@@ -4,16 +4,18 @@ import HomeScreen from "./src/screens/HomeScreen";
 import ComponentsScreen from './src/screens/Components';
 import ListComponentScreen from './src/screens/ListScreen';
 import ButtonAndTouchableOpacityScreen from './src/screens/ButtonAndTouchableOpacity';
+import ImageScreen from './src/screens/ImageScreen';
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     Components: ComponentsScreen,
     List: ListComponentScreen,
-    ButtonAndTO: ButtonAndTouchableOpacityScreen
+    ButtonAndTO: ButtonAndTouchableOpacityScreen,
+    Image: ImageScreen
   },
   {
-    initialRouteName: "ButtonAndTO",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "React First App"
     }
