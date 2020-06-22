@@ -48,6 +48,14 @@ const HomeScreen = ({ navigation }) => {
 				title="Go to Counter Screen Demo"
 				style={styles.marginAll}
 			/>
+
+			<Button
+				//Below prop is used for button click listener
+				onPress={() => navigation.navigate('Color')}
+				//Below prop is used to set a name of the button
+				title="Go to Color Screen Demo"
+				style={styles.marginAll}
+			/>
 		</View>
 	);
 };
