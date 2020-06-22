@@ -23,6 +23,8 @@ const HomeScreen = ({navigation}) => {
 
         //Below prop is used to set a name of the button
         title="Go to Components Screen"
+
+        style={styles.marginAll}
       />
 
       <Button
@@ -31,6 +33,8 @@ const HomeScreen = ({navigation}) => {
 
         //Below prop is used to set a name of the button
         title="Go to List Screen"
+
+        style={styles.marginAll}
       />
 
       <Button
@@ -39,6 +43,18 @@ const HomeScreen = ({navigation}) => {
 
         //Below prop is used to set a name of the button
         title="Go to Image Screen"
+
+        style={styles.marginAll}
+      />
+
+      <Button
+         //Below prop is used for button click listener
+         onPress={()=> navigation.navigate('Counter')}
+
+        //Below prop is used to set a name of the button
+        title="Go to Counter Screen Demo"
+
+        style={styles.marginAll}
       />
 
     </View>
@@ -61,7 +77,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
     margin: 10,
     textAlign: "center"
-  }
+  },
+
+  marginAll:{
+    marginTop: 10
+}
 
 });
 
