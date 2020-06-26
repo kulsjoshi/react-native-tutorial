@@ -21,7 +21,7 @@ const ButtonAndTouchableOpacityScreen = ({ navigation }) => {
 				//Below prop is used for button click listener
 				onPress={() => navigation.navigate('Components')}
 				//Below prop is used to set a name of the button
-				title="Go to Components Screen"
+				title='Go to Components Screen'
 			/>
 
 			<TouchableOpacity onPress={() => navigation.navigate('List')}>

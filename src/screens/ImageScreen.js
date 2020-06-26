@@ -7,28 +7,28 @@ const ImageScreen = () => {
 		<View>
 			<ImageDetailComponent
 				styles={styles.marginAll}
-				title="Forest"
+				title='Forest'
 				imageSource={require('../../assets/forest.jpg')}
 				ratings={9}
 			/>
 
 			<ImageDetailComponent
 				styles={styles.marginAll}
-				title="Mountain"
+				title='Mountain'
 				imageSource={require('../../assets/mountain.jpg')}
 				ratings={8}
 			/>
 
 			<ImageDetailComponent
 				styles={styles.marginAll}
-				title="Hill Stations"
+				title='Hill Stations'
 				imageSource={require('../../assets/forest.jpg')}
 				ratings={7}
 			/>
 
 			<ImageDetailComponent
 				styles={styles.marginAll}
-				title="Beaches"
+				title='Beaches'
 				imageSource={require('../../assets/beach.jpg')}
 				ratings={11}
 			/>

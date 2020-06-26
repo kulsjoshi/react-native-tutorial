@@ -7,6 +7,7 @@ import ButtonAndTouchableOpacityScreen from './src/screens/ButtonAndTouchableOpa
 import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import ColorScreen from './src/screens/ColorScreen';
+import SquareColorScreen from './src/screens/SquareColorScreen';
 
 const navigator = createStackNavigator(
 	{
@@ -17,6 +18,7 @@ const navigator = createStackNavigator(
 		Image: ImageScreen,
 		Counter: CounterScreen,
 		Color: ColorScreen,
+		SquareColor: SquareColorScreen,
 	},
 	{
 		initialRouteName: 'Home',

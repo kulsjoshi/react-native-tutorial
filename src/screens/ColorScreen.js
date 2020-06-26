@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Text, StyleSheet, View } from 'react-native';
+import { Button, Text, StyleSheet, View, FlatList } from 'react-native';
 
 const ColorScreen = () => {
 	const [colors, setColors] = useState([]);
@@ -9,17 +9,30 @@ const ColorScreen = () => {
 	return (
 		<View>
 			<Button
-				title="Add Color"
+				title='Add Color'
 				onPress={() => {
 					setColors([...colors, getRandomNumber()]);
 				}}
 			/>
-			<View
-				style={{
-					height: 100,
-					width: 100,
-					backgroundColor: getRandomNumber(),
-				}}></View>
+
+			<FlatList
+				//Below prob is used to assign a unique key for list items
+				keyExtractor={(item) => item}
+				//Below prop binds a data from array to flatlist
+				data={colors}
+				//This view will set a view of item and its data
+				renderItem={({ item }) => {
+					return (
+						<View
+							style={{
+								height: 100,
+								width: 100,
+								backgroundColor: item,
+							}}
+						/>
+					);
+				}}
+			/>
 		</View>
 	);
 };

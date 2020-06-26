@@ -23,7 +23,7 @@ const CounterScreen = () => {
 					//counter++
 					setCounter(counter + 1);
 				}}
-				title="Increase"
+				title='Increase'
 			/>
 
 			<Button
@@ -32,7 +32,7 @@ const CounterScreen = () => {
 					//counter--
 					setCounter(counter - 1);
 				}}
-				title="Decrease"
+				title='Decrease'
 			/>
 
 			<Text style={styles.title}>CURRENT COUNTER</Text>

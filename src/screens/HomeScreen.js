@@ -21,7 +21,7 @@ const HomeScreen = ({ navigation }) => {
 				//Below prop is used for button click listener
 				onPress={() => navigation.navigate('Components')}
 				//Below prop is used to set a name of the button
-				title="Go to Components Screen"
+				title='Go to Components Screen'
 				style={styles.marginAll}
 			/>
 
@@ -29,7 +29,7 @@ const HomeScreen = ({ navigation }) => {
 				//Below prop is used for button click listener
 				onPress={() => navigation.navigate('List')}
 				//Below prop is used to set a name of the button
-				title="Go to List Screen"
+				title='Go to List Screen'
 				style={styles.marginAll}
 			/>
 
@@ -37,7 +37,7 @@ const HomeScreen = ({ navigation }) => {
 				//Below prop is used for button click listener
 				onPress={() => navigation.navigate('Image')}
 				//Below prop is used to set a name of the button
-				title="Go to Image Screen"
+				title='Go to Image Screen'
 				style={styles.marginAll}
 			/>
 
@@ -45,7 +45,7 @@ const HomeScreen = ({ navigation }) => {
 				//Below prop is used for button click listener
 				onPress={() => navigation.navigate('Counter')}
 				//Below prop is used to set a name of the button
-				title="Go to Counter Screen Demo"
+				title='Go to Counter Screen Demo'
 				style={styles.marginAll}
 			/>
 
@@ -53,7 +53,15 @@ const HomeScreen = ({ navigation }) => {
 				//Below prop is used for button click listener
 				onPress={() => navigation.navigate('Color')}
 				//Below prop is used to set a name of the button
-				title="Go to Color Screen Demo"
+				title='Go to Color Screen Demo'
+				style={styles.marginAll}
+			/>
+
+			<Button
+				//Below prop is used for button click listener
+				onPress={() => navigation.navigate('SquareColor')}
+				//Below prop is used to set a name of the button
+				title='Go to Square Color Screen Demo'
 				style={styles.marginAll}
 			/>
 		</View>
